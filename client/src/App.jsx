@@ -16,9 +16,8 @@ function App() {
     setWeatherData(null);
 
     try {
-      // Note: Ensure your backend is running on port 3000
       const response = await fetch(
-        `http://192.168.0.106:3000/v1/api/weather?city=${city.trim()}`
+        `https://weather-app-1-rl9d.onrender.com/v1/api/weather?city=${city.trim()}`
       );
       const data = await response.json();
 
