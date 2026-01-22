@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./component/Navbar";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const [city, setCity] = useState("");
@@ -89,6 +90,7 @@ function App() {
           </div>
         </div>
       )}
+      <Analytics />
     </>
   );
 }
